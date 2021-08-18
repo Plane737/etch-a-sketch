@@ -1,7 +1,7 @@
 body {
     font-family: "Style Script", cursive;
-    color: #e7b255;
-    background-color: #ce2424;
+    color: #57e81f;
+    background-color: #2f098f;
 }
 
 #canvas-container {
@@ -45,7 +45,7 @@ footer {
 .footer-container > a {
     text-decoration: none;
     font-size: 200%;
-    color: white;
+    color: #57e81f;
 }
 .footer-container > a:hover {
     text-decoration: underline;

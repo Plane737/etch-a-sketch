@@ -15,13 +15,9 @@ function clearGrid() {
     generateGrid(slider.value);
 }
 
-
-
 slider.addEventListener("mousedown", detectMouseUp, false);
 
 
-
-generateGrid(32);
 function updateCurrentColor() {
     currentColor = colorSelector.value;
 }
@@ -33,13 +29,12 @@ function changeColor(e){
 
 }
 
+
 function generateGrid(size){
 
     const heightWidht = canvas.offsetHeight / size;
-    let i = 0;
-
     canvas.style.gridTemplateColumns = `repeat(${size}, ${heightWidht}px)`
-
+    let i = 0;
     while (i < size * size){
         const cell = document.createElement("div");
         cell.style.backgroundColor = "white";
@@ -50,5 +45,5 @@ function generateGrid(size){
     }
 }
 
-
+generateGrid(32);
 
